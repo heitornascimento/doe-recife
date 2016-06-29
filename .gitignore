@@ -12,6 +12,8 @@
 
 *.keystore 
 
+doe_ws.properties
+
 # Java class files
 *.class
 
