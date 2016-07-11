@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">Doe Recife</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_donation_preference">DonationPreferenceActivity</string>
+    <string name="donation_preference">donation_preference</string>
+    <string name="user">user</string>
+    <string name="title_activity_institution">InstitutionActivity</string>
+
+
+    <string name="title_activity_historic">HistoricActivity</string>
+    <string name="parameter_donation_type">donationType</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

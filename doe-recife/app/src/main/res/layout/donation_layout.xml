@@ -1,0 +1,405 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff" />
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/briquedos_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_brinquedos">
+
+                            <ImageView
+                                android:id="@+id/img_cat_brinquedos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_brinquedos" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_brinquedos"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Brinquedos"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/cesta_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_cesta">
+
+                            <ImageView
+                                android:id="@+id/img_cat_cest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_cesta" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_cest"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Cesta Básica"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/higiene_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_higiene">
+
+                            <ImageView
+                                android:id="@+id/img_cat_higiene"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_higiene" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_higiene"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Higiene Pessoal"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/lencol_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_lencol">
+
+                            <ImageView
+                                android:id="@+id/img_cat_lencol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_lencol" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_lencol"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Lençol"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll2"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/limpeza_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_limpeza">
+
+                            <ImageView
+                                android:id="@+id/img_cat_limpeza"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_limpeza" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_limpeza"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Material de Limpeza"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/pedacogico_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_cesta">
+
+                            <ImageView
+                                android:id="@+id/img_cat_pedagogico"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_pedagogico" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_pedagogico"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Material Pedagógico"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!-- l4 -->
+
+                    <LinearLayout
+                        android:id="@+id/ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll3"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/financeiro_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_financeiro">
+
+                            <ImageView
+                                android:id="@+id/img_cat_finaceiro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_financeiro" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_finaceiro"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Recurso Financeiro"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/remedio_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_remedio">
+
+                            <ImageView
+                                android:id="@+id/img_cat_remedio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_remedios" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_remedio"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Remédio"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!-- l5 -->
+
+                    <LinearLayout
+                        android:id="@+id/ll5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll4"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/roupas_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_roupas">
+
+                            <ImageView
+                                android:id="@+id/img_cat_roupas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_roupas" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_roupas"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Roupas"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/banho_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_banho">
+
+                            <ImageView
+                                android:id="@+id/img_cat_banho"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_banho" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_banho"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Toalha de Banho"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!-- l6 -->
+
+                    <LinearLayout
+                        android:id="@+id/ll6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll5"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/mesa_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_mesa">
+
+                            <ImageView
+                                android:id="@+id/img_cat_mesa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_mesa" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_mesa"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Toalha de Mesa"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/outros_categories"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/donation_category_outros">
+
+                            <ImageView
+                                android:id="@+id/img_cat_outros"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_categories_outros" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_cat_outros"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="5dp"
+                                android:text="Outros"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+        <fragment
+            android:id="@+id/fragment_drawer"
+            android:name="br.com.doe.view.FragmentDrawer"
+            android:layout_width="@dimen/nav_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_drawer"
+            tools:layout="@layout/fragment_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</android.support.design.widget.CoordinatorLayout>

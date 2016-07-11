@@ -1,0 +1,88 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context="br.com.doe.view.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_logo_doe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_logo_doe"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/textColorPrimary" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLayoutEmail"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="senha"
+                android:inputType="textPassword"
+                android:textColor="@color/textColorPrimary" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLayoutPassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ripple_effect"
+            android:text="Login" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:background="@drawable/ripple_register"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Não tenho Conta? Criar."
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

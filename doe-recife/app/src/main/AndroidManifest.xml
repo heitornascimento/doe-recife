@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.doe"
+    android:versionCode="15"
+    android:versionName="2.1">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/DoeMaterialTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="<KEY>" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".view.DonationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DoeMaterialTheme" >
+            <intent-filter >
+                <action android:name="DONATION_LIST" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            </activity>
+        <activity
+            android:name=".view.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.InstitutionActivity"
+            android:label="@string/title_activity_institution"
+            android:screenOrientation="portrait"
+            android:theme="@style/DoeMaterialTheme" />
+        <activity
+            android:name=".view.HistoricActivity"
+            android:label="@string/title_activity_historic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".endpoints.LoginEndpoint"
+            android:exported="false" />
+        <service
+            android:name=".endpoints.RegisterEndpoint"
+            android:exported="false" />
+        <service
+            android:name=".endpoints.InstitutionsEndpoint"
+            android:exported="false" />
+        <service
+            android:name=".endpoints.RegisterDonationEndpoint"
+            android:exported="false" />
+
+        <activity android:name=".view.InstitutionListActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

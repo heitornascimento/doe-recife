@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="login">Entrar</string>
+    <string name="user_name">Email:</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="password">Senha:</string>
+
+
+    <!-- Donations -->
+    <string name="cesta_basica">Cesta Básica</string>
+    <string name="material_limpeza">Material de Limpeza</string>
+    <string name="material_pedagogico">Material Pedagógico</string>
+    <string name="toalha_mesa">Toalha de Mesa</string>
+    <string name="brinquedos">Brinquedos</string>
+    <string name="toalha_banho">Toalha de Banho</string>
+    <string name="lencol">Lençol</string>
+    <string name="remedio">Remédio</string>
+    <string name="roupas">Roupas</string>
+    <string name="recursos_financeiros">Recursos Financeiros</string>
+    <string name="higiene_pessoal">Higiene Pessoal</string>
+    <string name="outros">Outros</string>
+    <string name="title_activity_doe_action_bar">DoeActionBar</string>
+    <string name="profile">Perfil</string>
+    <string name="donations">DOAÇÕES</string>
+    <string name="donation">DOAÇÃO</string>
+    <string name="zero_donation">Nenhuma Doação</string>
+    <string name="donation_action">What do you wish to donate?</string>
+    <string name="title_activity_donation">DonationActivity</string>
+    <string name="title_activity_register">Cadastro de usuário</string>
+    <string name="title_activity_institution_list">InstitutionList</string>
+    <string name="current_user">CurrentUser</string>
+    <string name="auth_token">AuthToken</string>
+    <string name="donation_id">donation_id</string>
+    <string name="register">Criar conta</string>
+    <string name="name">Nome</string>
+    <string name="repeat_password">Repita a Senha</string>
+    <string name="doar">DOAR</string>
+    <string name="institution">institution</string>
+    <string name="instituicao">Instituição</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="tel">tel</string>
+    <string name="user_preference_donaton">preferencia_do_usuario</string>
+    <string name="donation_registration_message">Deseja Registrar Sua Doação ?</string>
+    <string name="ok_button">OK</string>
+    <string name="aguarde">Aguarde...</string>
+    <string name="location_provider">Não foi possível recuperar sua localização, habilite o GPS.</string>
+    <string name="location_provider_enable">Habilitar.</string>
+    <string name="location_provider_disable">Cancelar.</string>
+    <string name="carregando_instituicoes">Carregando Instituições.</string>
+    <string name="escolha_um_bairro">Escolha um Bairro.</string>
+    <string name="todos">Mostrar Todos</string>
+
+    <!-- Login Form -->
+    <string name="mandatory_fields">This field is mandatory</string>
+    <string name="error_invalid_email">Email format is not correct.</string>
+    <string name="error_min_eight_characters">Password must contain at least 8 characters</string>
+
+    <!-- Progress Dialog -->
+
+
+    <!-- Form Register -->
+    <string name="user_name_register" >Name</string>
+    <string name="user_email_register" >Email</string>
+    <string name="user_password_register" >Password</string>
+    <string name="user_conf_password_register" >Confirm Password</string>
+    <string name="error_password_not_match" >Passwords do not match</string>
+    <string name="error_registration" >Error - Could not register user</string>
+
+    <!-- Institutions List(Map) -->
+    <string name="loading_institutions" >Loading Institutions</string>
+    <string name="institutions_tool_bar" >Institutions</string>
+    <!-- Spinner Default -->
+    <string name="default_district">All Districts</string>
+
+
+    <!-- Institution Details -->
+    <plurals name="user_donation_action">
+        <item quantity="zero">No Donation has been made.</item>
+        <item quantity="one">donation has been made</item>
+        <item quantity="other"> donations have been made.</item>
+    </plurals>
+    <string name="title_dialog">Doe Recife</string>
+    <string name="register_donation">Register a donation?</string>
+    <string name="make_phone_call">Make a phone call to the institution?</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="waiting">Please, wait</string>
+
+    <plurals name="donation_history">
+        <item quantity="zero">donation</item>
+        <item quantity="other">donations</item>
+    </plurals>
+
+    <string name="logout">Logout</string>
+
+    <string name="no_internet">No internet</string>
+
+
+</resources>

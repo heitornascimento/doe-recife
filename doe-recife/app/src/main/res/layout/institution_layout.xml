@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_btn_action" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_inst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:paddingTop="21dp" >
+
+                <TextView
+                    android:id="@+id/inst_razao_social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="AAAA BBBBB CCCC DDDDsddddddddddddddddddddddddddddddddddd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/inst_cnpj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inst_razao_social"
+                    android:layout_centerHorizontal="true"
+                    android:text="cpnk 123 234234"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/inst_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inst_cnpj"
+                    android:layout_centerHorizontal="true"
+                    android:text="11 3434 3443 43"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/inst_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inst_tel"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="16dp"
+                    android:text="heitornsouza@gmail.com"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/divisor1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/inst_email"
+                    android:background="#0083BA" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/divisor1"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorPrimary" >
+
+                    <TextView
+                        android:id="@+id/inst_counter_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/inst_counter_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/inst_counter_number"
+                        android:text="doações EFetuadas"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_below="@+id/rl_inst"
+                android:layout_centerInParent="true" >
+
+                <fragment
+                    android:id="@+id/institutionsMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="14dp"
+                    class="com.google.android.gms.maps.MapFragment" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/institutionsMap"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#DDDDDD" >
+
+                    <ImageView
+                        android:id="@+id/img_google_maps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="21dp"
+                        android:src="@drawable/ic_google_maps" />
+
+                    <View
+                        android:id="@+id/divisor1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/img_google_maps"
+                        android:background="#BBBBBB" />
+
+                    <TextView
+                        android:id="@+id/inst_endereco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="8dp"
+                        android:layout_toRightOf="@+id/divisor1"
+                        android:text="Rua cara de carai sdf sdfsdfsdfs dddddddd"
+                        android:textColor="#232323"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_donation"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/rl_counter"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" >
+
+                <TextView
+                    android:id="@+id/inst_donation_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Tipos de Doação"
+                    android:textColor="#DDDDDD"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_img_donation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inst_donation_label"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_btn_action"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/img_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_call" />
+
+        <View
+            android:id="@+id/divisor4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/img_call"
+            android:background="#0083BA" />
+
+        <ImageView
+            android:id="@+id/img_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/divisor4"
+            android:background="@drawable/doe_button_inst"
+            android:src="@drawable/ic_send_mail" />
+
+        <View
+            android:id="@+id/divisor5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/img_email"
+            android:background="#0083BA" />
+
+        <RelativeLayout
+            android:id="@+id/rl_registar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/divisor5"
+            android:background="@color/colorPrimary" >
+
+            <TextView
+                android:id="@+id/inst_registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Registrar Doação"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

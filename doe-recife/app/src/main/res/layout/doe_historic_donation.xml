@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2A2A" >
+
+    <RelativeLayout
+        android:id="@+id/hst_brinquedos"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:background="@drawable/doe_button_historic" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:src="@drawable/ic_brinquedos_black" />
+
+        <TextView
+            android:id="@+id/briquedos_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="16dp"
+            android:text="1"
+            android:textColor="#1A1A1A"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hst_cesta"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:background="@drawable/doe_button_historic" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:src="@drawable/ic_cesta_black" />
+
+        <TextView
+            android:id="@+id/cesta_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="16dp"
+            android:text="1"
+            android:textColor="#1A1A1A"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

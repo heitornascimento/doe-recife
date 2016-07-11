@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/main_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff0000" >
+
+            <RelativeLayout
+                android:id="@+id/user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000ff" >
+
+                <ImageView
+                    android:id="@+id/user_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/bt_photo" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/user_photo"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/user_count_donation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name"
+                    android:layout_toRightOf="@+id/user_photo"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divisor1"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/user_info"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/donation_historical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divisor1"
+                android:orientation="vertical"
+                android:background="#00ff" >
+
+                <TextView
+                    android:id="@+id/aaaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divisor2"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/donation_historical"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/divisor2"
+                android:orientation="vertical"
+                android:background="#000000" >
+
+                <TextView
+                    android:id="@+id/bbb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium ssss"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>

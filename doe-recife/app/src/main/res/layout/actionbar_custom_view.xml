@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/img_donation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_centerVertical="true"
+        android:background="#044BFF"
+        />
+
+    <TextView
+        android:id="@+id/action_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_donation"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/bairros_spinner"
+        android:visibility="gone"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/action_title" />
+
+</RelativeLayout>

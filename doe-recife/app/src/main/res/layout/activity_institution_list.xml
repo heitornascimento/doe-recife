@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_list_institution"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F2"
+    tools:context=".InstitutionList" >
+
+    <FrameLayout
+        android:id="@+id/fl_map"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:animateLayoutChanges="true" >
+
+        <fragment
+            android:id="@+id/institutionsMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.MapFragment" />
+
+        <ImageView
+            android:id="@+id/img_full_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bt_map_expand" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_map" 
+        android:animateLayoutChanges="true">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </FrameLayout>
+
+</RelativeLayout>

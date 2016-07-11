@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="donation">
+        <item quantity="one">
+           Doação
+        </item>
+        <item quantity="other">
+           Doações
+        </item>
+    </plurals>
+</resources>

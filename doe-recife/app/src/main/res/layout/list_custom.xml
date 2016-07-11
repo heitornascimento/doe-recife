@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+      <FrameLayout
+            android:id="@+id/fr_container2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/institutionsMap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.MapFragment" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bt_banho" />
+        </FrameLayout>
+    
+    
+
+    <SlidingDrawer
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:content="@+id/fr_list"
+        android:handle="@+id/fr_container"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/fr_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="visible">
+            
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fr_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFF0F2" />
+        </FrameLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>
