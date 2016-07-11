@@ -29,6 +29,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
+                    android:paddingLeft="10dp"
                     android:text="AAAA BBBBB CCCC DDDDsddddddddddddddddddddddddddddddddddd"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
@@ -72,7 +73,7 @@
                     android:background="#0083BA" />
 
                 <RelativeLayout
-                    android:id="@+id/rl_counter"
+                    android:id="@+id/rl_counter2"
                     android:layout_width="wrap_content"
                     android:layout_height="56dp"
                     android:layout_below="@+id/divisor1"
@@ -135,7 +136,7 @@
                         android:src="@drawable/ic_google_maps" />
 
                     <View
-                        android:id="@+id/divisor1"
+                        android:id="@+id/divisor2"
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@+id/img_google_maps"
@@ -147,7 +148,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_margin="8dp"
-                        android:layout_toRightOf="@+id/divisor1"
+                        android:layout_toRightOf="@+id/divisor2"
                         android:text="Rua cara de carai sdf sdfsdfsdfs dddddddd"
                         android:textColor="#232323"
                         android:textSize="12sp" />

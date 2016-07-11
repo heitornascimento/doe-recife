@@ -1,17 +1,25 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'doe-recife'
+            keyPassword 'doerecife'
+            storeFile file('/Users/heitornascimento/GITHUB/doe-recife/doe-recife/doe-recife.keystore')
+            storePassword 'doerecife'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
     compileSdkVersion 23
     buildToolsVersion "22.0.1"
-
     dataBinding {
         enabled = true
     }
     compileOptions.encoding = 'ISO-8859-1'
     useLibrary 'org.apache.http.legacy'
-
-
-
     defaultConfig {
         applicationId "br.com.doe"
         minSdkVersion 19
@@ -19,15 +27,13 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.config
         }
     }
-
-
 }
 
 dependencies {
@@ -42,12 +48,6 @@ dependencies {
     compile 'com.android.support:support-v4:23.2.1'
     compile 'com.google.maps.android:android-maps-utils:0.4+'
     compile 'com.android.support:percent:23.0.0'
-
-
-
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
     androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
-
-
-
 }
