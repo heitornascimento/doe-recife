@@ -5,6 +5,6 @@ This app won the second place in a contest named [Cidadão Inteligente](http://w
 
 [Download from Google Play](https://play.google.com/store/apps/details?id=br.com.doe&hl=pt_BR)
 
-![alt text](https://s31.postimg.org/e0kfi02or/map.png "Institution List") ![alt text](https://s31.postimg.org/hqbc30e7f/inst.png "Institution")
+![alt text](https://s31.postimg.org/z1xfzlmiz/doar.png "Donate") ![alt text](https://s31.postimg.org/hqbc30e7f/inst.png "Institution")
 
 
