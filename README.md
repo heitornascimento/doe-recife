@@ -1,7 +1,7 @@
 # doe-recife
 Android application that helps people to donate.
 
-This app won the second place in a contest named [Cidadão Inteligente](http://www.cidadaointeligente.rec.br/) back in 2014.
+This app was a finalist in a contest named [Cidadão Inteligente](http://www.cidadaointeligente.rec.br/) back in 2014.
 
 [Download from Google Play](https://play.google.com/store/apps/details?id=br.com.doe&hl=pt_BR)
 
